@@ -1,0 +1,7 @@
+{
+    "host": "127.0.0.1",
+    "user": "root",
+    "password": "statif123#2",
+    "database": "statif_db",
+    "port": 3306
+}
