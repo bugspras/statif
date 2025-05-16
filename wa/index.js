@@ -399,10 +399,14 @@ send_cron = cron.schedule("*/6 * * * * *", function () { return __awaiter(void 0
             case 0:
                 _a.trys.push([0, 10, , 11]);
                 id = 123;
+                console.log(id, "tessssssssssss");
+                console.log(con[id]);
                 if (!(con[id] == "connected")) return [3 /*break*/, 8];
                 return [4 /*yield*/, db.select()];
             case 1:
                 m = _a.sent();
+                console.log(m);
+                console.log(id, "tessssssssssss dicoba");
                 if (!m["status"]) return [3 /*break*/, 7];
                 if (!(m["type"] === "text")) return [3 /*break*/, 4];
                 return [4 /*yield*/, sock[id].sendMessage("".concat(m["nomor"], "@s.whatsapp.net"), {
@@ -410,6 +414,7 @@ send_cron = cron.schedule("*/6 * * * * *", function () { return __awaiter(void 0
                     })];
             case 2:
                 msg = _a.sent();
+                console.log(msg);
                 return [4 /*yield*/, db.update(m["kode"])];
             case 3:
                 _a.sent();
