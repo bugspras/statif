@@ -289,7 +289,7 @@ function _0x75c4() {
         'output',
         'FxHWG',
         'readdirSync',
-        '../database',
+        './database',
         'findIndex',
         'nomor',
         'init\x20:',
